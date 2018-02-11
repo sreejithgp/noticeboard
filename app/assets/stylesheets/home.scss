@@ -17,18 +17,18 @@ body {
   padding: 20px;
   margin: 0;
   background-color: #e9e9e9;
-  background-image: url(https://sites.google.com/site/carolinacsfirst/unit/home/websites/moodboardbg.jpg);
+  background-image: url(image_path("moodboardbg.jpg"));
   background-repeat: repeat;
   color: #000;
 }
 .wrapper {
   position: relative;
-  width: 700px;
-  height: 900px;
+  width: 1000px;
+  height: 700px;
   border: 15px solid #130d02;
   margin: 0 auto;
   background-color: #ad6908;
-  background-image: url(https://sites.google.com/site/carolinacsfirst/unit/home/websites/corkboard.jpg);
+  background-image: url(image_path("corkboard.jpg"));
   background-repeat: repeat;
   box-shadow: 5px 5px 5px rgba(0,0,0,.4);
 }
@@ -111,11 +111,6 @@ p {
 }
 
 #picture-1 {
-  left: 3%;
-  top: 30%;
-  transform: rotate(2deg);
-  -ms-transform: rotate(2deg);
-  -webkit-transform: rotate(2deg);
 }
 
 #picture-2 {

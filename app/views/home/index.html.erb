@@ -1,34 +1,8 @@
-<div class="post-it-note yellow" id="note-1">
-  <div class="pin blue"></div>
-  <h1><br>
-    Take back the web</h1>
-  <p>Share who you want to teach the web to here (ie, friends, family,
-  colleagues...)</p>
-</div>
-<div class="post-it-note red" id="note-2">
-  <div class="pin yellow"></div>
-  <h1><br>
-    What to teach?</h1>
-  <p>Share what you want to teach here (ie web design w/ Thimble, video
-  editing w/ Popcorn, webpage hacking w/ XRay Goggles...)</p>
-</div>
-<div class="post-it-note blue" id="note-3">
-  <div class="pin red"></div>
-  <h1><br>
-    Turn it into a party!</h1>
-  <p>How will you keep things interesting? (ie hands-on participation,
-  discussion, live-coding, balloons!)</p>
-</div>
-<figure class="polaroid" id="picture-1">
-  <div class="pin red"></div><img alt="My Holiday"  src="https://sites.google.com/site/carolinacsfirst/unit/home/websites/myholiday.jpg">
+<% 5.times do |i| %>
+<figure class="polaroid" style="<%= random_style(i) %>">
+  <div class="pin <%= ["red","blue","yellow"].shuffle.first %>"></div><%= image_tag "myholiday.jpg" %> 
   <figcaption>
     --&gt; I like this #TeachTheWeb room setup
   </figcaption>
 </figure>
-<figure class="polaroid" id="picture-2">
-  <div class="pin blue"></div><img alt="Mozilla Festival Japan pic" src="https://e48aadac-a-62cb3a1a-s-sites.googlegroups.com/site/carolinacsfirst/unit/home/websites/makerparty.jpg">
-  <figcaption>
-    Here's us after a maker party in Japan!
-  </figcaption>
-</figure>
-</div>
+<% end %>
