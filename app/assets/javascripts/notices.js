@@ -7,5 +7,10 @@ $(document).on("keyup", "#notice_description", function(){
   $("#desc-length").html(remaining_length);
 });
 $(document).ready(function(){
-  $("#location").geocomplete();
-})
+  $("#location")
+    .geocomplete()
+    .bind("geocode:result", function (event, result) {
+      $("#latitude").val(result.geometry.location.lat());
+      $("#longitude").val(result.geometry.location.lng());
+    });
+});

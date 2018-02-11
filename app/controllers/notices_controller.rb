@@ -36,6 +36,6 @@ class NoticesController < ApplicationController
     end
 
     def notice_params
-      params.require(:notice).permit(:description, :polaroid, :tag_list, :location)
+      params.require(:notice).permit(:description, :polaroid, :tag_list, :location, :latitude, :longitude)
     end
 end
