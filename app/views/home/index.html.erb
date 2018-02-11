@@ -3,7 +3,7 @@
   <h1>&nbsp;&nbsp;&nbsp;<%= link_to "Add New", new_notice_path %></h1>
 </div><% @notices.each do |notice| %>
 <figure class="polaroid" style="<%= random_style %>">
-  <div class="pin <%= ["red","blue","yellow"].shuffle.first %>"></div><%= image_tag notice.polaroid.url(:medium) %> 
+  <div class="pin <%= ["red","blue","yellow"].shuffle.first %>"></div><%= image_tag notice.polaroid.url(:original) %> 
 <figcaption>
   <%= notice.description %>
 </figcaption>

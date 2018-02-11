@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @notices = Notice.all.limit(5)
+    @notices = Notice.order("id desc").limit(5)
   end
 end

@@ -12,12 +12,13 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description, id: :notice_description %>
+    <label for="description">Description (<span id="desc-length">127</span>)</label>
+    <%= form.text_area :description, id: :notice_description, size: "36x4" %>
+    <%= form.label :polaroid %>
     <%= form.file_field :polaroid %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Add" %>
   </div>
 <% end %>
