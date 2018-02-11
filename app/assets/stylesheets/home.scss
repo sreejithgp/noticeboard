@@ -21,6 +21,10 @@ body {
   background-repeat: repeat;
   color: #000;
 }
+.menu {
+  position: relative;
+  height: 70px;
+}
 .wrapper {
   position: relative;
   width: 1000px;
@@ -38,10 +42,32 @@ body {
 }
 .post-it-note {
   width: 230px;
-  height: 230px;
+  height: 50px;
   padding: 20px;
   font-family: Neucha, serif;
   background-color: #e8dd62;
+  text-align: center;
+}
+.post-it-menu {
+  margin-right: 50px;
+  float: left;
+  width: 230px;
+  height: 50px;
+  padding: 20px;
+  font-family: Neucha, serif;
+  background-color: #e8dd62;
+  text-align: center;
+  transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+}
+.tags {
+  width: 1000px;
+  transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  text-align: left;
+  padding-left: 50px;
 }
 .yellow {
   background-color: #e8dd62;
@@ -93,8 +119,11 @@ p {
 }
 
 #note-1 {
-  top: 2%;
-  left: 35%;
+  top: 13%;
+  left: -12%;
+  transform: rotate(100deg);
+  -ms-transform: rotate(100deg);
+  -webkit-transform: rotate(100deg);
 }
 
 #note-2 {
@@ -103,11 +132,6 @@ p {
 }
 
 #note-3 {
-  bottom: 10%;
-  left: 16%;
-  transform: rotate(2deg);
-  -ms-transform: rotate(2deg);
-  -webkit-transform: rotate(2deg);
 }
 
 #picture-1 {

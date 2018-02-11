@@ -1,8 +1,8 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 $(document).ready(function(){
-  var containerW = 1000;
-  var containerH = 700;
+  var containerW = 1100;
+  var containerH = 750;
   var positions = [];
   var i = 0;
   $('.polaroid').each(function() {

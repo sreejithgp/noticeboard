@@ -1,8 +1,11 @@
-<% 5.times do |i| %>
-<figure class="polaroid" style="<%= random_style(i) %>">
-  <div class="pin <%= ["red","blue","yellow"].shuffle.first %>"></div><%= image_tag "myholiday.jpg" %> 
+<div class="post-it-note red" id="note-1">
+  <div class="pin yellow"></div>
+  <h1>&nbsp;&nbsp;&nbsp;Nearby</h1>
+</div><% 5.times do |i| %>
+  <figure class="polaroid" style="<%= random_style %>">
+    <div class="pin <%= ["red","blue","yellow"].shuffle.first %>"></div><%= image_tag "myholiday.jpg" %> 
   <figcaption>
     --&gt; I like this #TeachTheWeb room setup
   </figcaption>
-</figure>
+  </figure>
 <% end %>
