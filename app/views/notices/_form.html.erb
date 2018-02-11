@@ -19,7 +19,7 @@
     <label for="tags">Tags (<span>comma, seperated</span>)</label>
     <%= form.text_field :tag_list %>
     <%= form.label :location %>
-    <%= form.text_field :location %>
+    <%= form.text_field :location, id: "location" %>
   </div>
   <div class="field">
     <%= recaptcha_tags %>

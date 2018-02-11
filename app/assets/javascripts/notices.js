@@ -6,3 +6,6 @@ $(document).on("keyup", "#notice_description", function(){
   var remaining_length = 127 - desc_length;
   $("#desc-length").html(remaining_length);
 });
+$(document).ready(function(){
+  $("#location").geocomplete();
+})
