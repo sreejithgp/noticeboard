@@ -1,0 +1,127 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  padding: 20px;
+  margin: 0;
+  background-color: #e9e9e9;
+  background-image: url(https://sites.google.com/site/carolinacsfirst/unit/home/websites/moodboardbg.jpg);
+  background-repeat: repeat;
+  color: #000;
+}
+.wrapper {
+  position: relative;
+  width: 700px;
+  height: 900px;
+  border: 15px solid #130d02;
+  margin: 0 auto;
+  background-color: #ad6908;
+  background-image: url(https://sites.google.com/site/carolinacsfirst/unit/home/websites/corkboard.jpg);
+  background-repeat: repeat;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.4);
+}
+.post-it-note,.polaroid {
+  position: absolute;
+  box-shadow: 3px 3px 2px rgba(0,0,0,.4);
+}
+.post-it-note {
+  width: 230px;
+  height: 230px;
+  padding: 20px;
+  font-family: Neucha, serif;
+  background-color: #e8dd62;
+}
+.yellow {
+  background-color: #e8dd62;
+}
+
+.red {
+  background-color: #d23838;
+}
+
+.blue {
+  background-color: #5c97ee;
+}
+
+p,h1,h2,h3,h4,h5 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+.polaroid {
+  padding: 10px;
+  margin: 0;
+  background: #FFF;
+  display: inline-block;
+}
+
+.polaroid img {
+  max-width: 250px;
+}
+
+.polaroid figcaption {
+  font-family: Neucha, sans-serif;
+}
+
+.pin {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+  box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+  border-radius: 20px;
+}
+
+#note-1 {
+  top: 2%;
+  left: 35%;
+}
+
+#note-2 {
+  top: 20%;
+  right: 2%;
+}
+
+#note-3 {
+  bottom: 10%;
+  left: 16%;
+  transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+}
+
+#picture-1 {
+  left: 3%;
+  top: 30%;
+  transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+}
+
+#picture-2 {
+  bottom: 10%;
+  right: 10%;
+  transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+}
