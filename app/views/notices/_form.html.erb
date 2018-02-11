@@ -18,9 +18,12 @@
     <%= form.file_field :polaroid %>
     <label for="tags">Tags (<span>comma, seperated</span>)</label>
     <%= form.text_field :tag_list %>
+    <%= form.label :location %>
+    <%= form.text_field :location %>
+  </div>
+  <div class="field">
     <%= recaptcha_tags %>
   </div>
-
   <div class="actions">
     <%= form.submit "Add" %>
   </div>

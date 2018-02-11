@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180211165042) do
+ActiveRecord::Schema.define(version: 20180211183030) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,9 @@ ActiveRecord::Schema.define(version: 20180211165042) do
     t.string "polaroid_content_type"
     t.integer "polaroid_file_size"
     t.datetime "polaroid_updated_at"
+    t.string "location"
+    t.float "latitude"
+    t.float "longitude"
   end
 
   create_table "taggings", force: :cascade do |t|

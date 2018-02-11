@@ -13,6 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 gem "paperclip", "~> 5.2.1"
 gem 'acts-as-taggable-on', '~> 5.0'
 gem "recaptcha", require: "recaptcha/rails"
+gem 'geocoder'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
