@@ -11,13 +11,13 @@
   <body>
     <div class="menu" >
       <div class="post-it-menu yellow">
-        <div class="pin blue"></div>
+        <div class="pin red"></div>
         <h1> Location</h1>
       </div>
       <div class="post-it-menu yellow tags">
-        <div class="pin blue"></div>
+        <div class="pin red"></div>
         <h1> Tags &nbsp; &nbsp; &nbsp;
-          <% ["cars","lens","photo"].each do |tag| %>
+          <% (["cars","lens","photo"] * 1).each do |tag| %>
             <span><a href=""><%= tag %></a></span>
           <% end %>
         </h1>

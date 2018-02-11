@@ -23,7 +23,7 @@ body {
 }
 .menu {
   position: relative;
-  height: 70px;
+  height: 100px;
 }
 .wrapper {
   position: relative;
@@ -52,8 +52,8 @@ body {
   margin-right: 50px;
   float: left;
   width: 230px;
-  height: 50px;
-  padding: 20px;
+  min-height: 20px;
+  padding: 10px 0px 0px 0px;
   font-family: Neucha, serif;
   background-color: #e8dd62;
   text-align: center;
@@ -63,9 +63,9 @@ body {
 }
 .tags {
   width: 1000px;
-  transform: rotate(-1deg);
-  -ms-transform: rotate(-1deg);
-  -webkit-transform: rotate(-1deg);
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
   text-align: left;
   padding-left: 50px;
 }
