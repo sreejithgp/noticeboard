@@ -10,8 +10,7 @@ class NoticesController < ApplicationController
 
   def create
     @notice = Notice.new(notice_params)
-
-    if @notice.save
+    if verify_recaptcha(model: @notice) && @notice.save
       redirect_to root_url, notice: 'Notice was successfully created.'
     else
       render :new
