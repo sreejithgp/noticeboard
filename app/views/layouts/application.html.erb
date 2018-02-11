@@ -17,8 +17,8 @@
       <div class="post-it-menu yellow tags">
         <div class="pin red"></div>
         <h1> Tags &nbsp; &nbsp; &nbsp;
-          <% (["cars","lens","photo"] * 1).each do |tag| %>
-            <span><a href=""><%= tag %></a></span>
+          <% (@tags || []).each do |tag| %>
+            <span><%= link_to tag, taggable_path(tag) %></span>
           <% end %>
         </h1>
       </div>
