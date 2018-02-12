@@ -168,7 +168,7 @@ PLATFORMS
 DEPENDENCIES
   acts-as-taggable-on (~> 5.0)
   byebug
-  geocoder
+  geocoder (~> 1.4, >= 1.4.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
   paperclip (~> 5.2.1)

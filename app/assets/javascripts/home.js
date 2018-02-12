@@ -1,6 +1,13 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 $(document).ready(function(){
+  $("#search_location")
+    .geocomplete()
+    .bind("geocode:result", function (event, result) {
+      $("#search_latitude").val(result.geometry.location.lat());
+      $("#search_longitude").val(result.geometry.location.lng());
+      $("#search-form").submit();
+    });
   var containerW = 1100;
   var containerH = 750;
   var positions = [];

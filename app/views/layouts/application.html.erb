@@ -12,8 +12,12 @@
   <body>
     <div class="menu" >
       <div class="post-it-menu yellow">
-        <div class="pin red"></div>
-        <h1> Location</h1>
+        <%= image_tag "location.png" %>
+      <%= form_tag "/", method: :get, id: "search-form" do %>
+        <%= text_field_tag :search_location, params[:search_location] %>
+        <%= hidden_field_tag :search_latitude, "" %>
+        <%= hidden_field_tag :search_longitude, "" %>
+      <% end %>
       </div>
       <div class="post-it-menu yellow tags">
         <div class="pin red"></div>
