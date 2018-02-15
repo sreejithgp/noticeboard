@@ -5,7 +5,7 @@ $(document).ready(function(){
     var enjoyhint_instance = new EnjoyHint({});
     var enjoyhint_script_steps = [
       {
-        'click #search-form' : 'Search location for listing'
+        'click #search-form' : 'Search based on location'
       },  
     ];
     enjoyhint_instance.set(enjoyhint_script_steps);
@@ -27,7 +27,7 @@ $(document).ready(function(){
     var enjoyhint_instance_new = new EnjoyHint({});
     var enjoyhint_new_steps = [
       {
-        'click #note-1' : 'Create a new Add. Once submited an Add cannot be removed. It will be automatically removed after a week.'
+        'click #note-1' : 'Pin a new Add and it will remain in the notice board for 1 week'
       },  
     ];
     enjoyhint_instance_new.set(enjoyhint_new_steps);

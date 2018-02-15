@@ -23,7 +23,7 @@
         <div class="pin red"></div>
         <h1> Tags &nbsp; &nbsp; &nbsp;
           <% (@tags || []).each do |tag| %>
-            <span><%= link_to tag, taggable_path(tag, request.GET) %></span>
+            <span><%= link_to tag, taggable_path(tag, request.GET.except(:page)) %></span>
           <% end %>
         </h1>
       </div>
