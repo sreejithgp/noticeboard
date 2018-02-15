@@ -139,8 +139,11 @@ p {
 }
 
 #note-2 {
-  top: 20%;
-  right: 2%;
+  top: 10%;
+  left: 100%;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
 }
 
 #note-3 {

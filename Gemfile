@@ -14,6 +14,7 @@ gem "paperclip", "~> 5.2.1"
 gem 'acts-as-taggable-on', '~> 5.0'
 gem "recaptcha", require: "recaptcha/rails"
 gem 'geocoder', '~> 1.4', '>= 1.4.5'
+gem 'kaminari'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

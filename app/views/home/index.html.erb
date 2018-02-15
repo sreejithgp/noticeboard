@@ -1,11 +1,16 @@
 <div class="post-it-note" id="note-1">
   <div class="pin blue"></div>
   <h1>&nbsp;&nbsp;&nbsp;<%= link_to "Add New", new_notice_path %></h1>
-</div><% @notices.each do |notice| %>
-<figure class="polaroid" style="<%= random_style %>">
-  <div class="pin <%= ["red","blue","yellow"].shuffle.first %>"></div><%= image_tag notice.polaroid.url(:original) %> 
-<figcaption>
-  <%= notice.description %>
-</figcaption>
-</figure>
+</div>
+<% @notices.each do |notice| %>
+  <figure class="polaroid" style="<%= random_style %>">
+    <div class="pin <%= ["red","blue","yellow"].shuffle.first %>"></div><%= image_tag notice.polaroid.url(:original) %> 
+  <figcaption>
+    <%= notice.description %>
+  </figcaption>
+  </figure>
 <% end %>
+<div class="post-it-note" id="note-2">
+  <div class="pin blue"></div>
+  <h1><%= paginate @notices %></h1>
+</div>

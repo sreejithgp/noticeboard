@@ -6,6 +6,6 @@ class HomeController < ApplicationController
       .where(id: ActsAsTaggableOn::Tagging
       .where(taggable_id: @notices.pluck(:id)).pluck(:tag_id)).pluck(:name)
     @notices = @notices.tagged_with(params[:tags]) if params[:tags].present?
-    @notices = @notices.order("RANDOM()").limit(5)
+    @notices = @notices.page(params[:page])
   end
 end

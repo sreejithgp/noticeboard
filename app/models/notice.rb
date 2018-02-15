@@ -1,4 +1,5 @@
 class Notice < ApplicationRecord
+  paginates_per 5
   acts_as_taggable
   geocoded_by :location
   #after_validation :geocode
