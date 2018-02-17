@@ -5,7 +5,7 @@ $(document).ready(function(){
     var enjoyhint_instance = new EnjoyHint({});
     var enjoyhint_script_steps = [
       {
-        'click #search-form' : 'Search based on location within 150kms'
+        'click #search-form' : 'Search free classified adds based on location within 150kms'
       },  
     ];
     enjoyhint_instance.set(enjoyhint_script_steps);
@@ -27,7 +27,7 @@ $(document).ready(function(){
     var enjoyhint_instance_new = new EnjoyHint({});
     var enjoyhint_new_steps = [
       {
-        'click #note-1' : 'Pin a new Add and it will remain in the notice board for 1 week'
+        'click #note-1' : 'Pin a new Add and it will remain in the notice board for a week'
       },  
     ];
     enjoyhint_instance_new.set(enjoyhint_new_steps);
