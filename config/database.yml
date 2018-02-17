@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: noticeboard_production
+  database: noticeboard
   username: noticeboard
   password: <%= ENV['NOTICEBOARD_DATABASE_PASSWORD'] %>
