@@ -5,7 +5,7 @@ $(document).ready(function(){
     var enjoyhint_instance = new EnjoyHint({});
     var enjoyhint_script_steps = [
       {
-        'click #search-form' : 'Search based on location'
+        'click #search-form' : 'Search based on location within 150kms'
       },  
     ];
     enjoyhint_instance.set(enjoyhint_script_steps);

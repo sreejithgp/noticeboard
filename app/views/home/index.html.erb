@@ -1,3 +1,5 @@
+<% title [params[:search_location], params[:tags]].reject(&:blank?).join(" | ") %>
+<% keywords 'local adds, classified, sites like craiglist, freeads, free ads, classified ads, post free ads' %>
 <div class="post-it-note" id="note-1">
   <div class="pin blue"></div>
   <h1>&nbsp;&nbsp;&nbsp;<%= link_to "Add New", new_notice_path %></h1>
