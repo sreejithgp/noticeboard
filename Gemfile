@@ -9,7 +9,6 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem "jquery-rails"
-gem 'uglifier', '>= 1.3.0'
 gem "paperclip", "~> 5.2.1"
 gem 'acts-as-taggable-on', '~> 5.0'
 gem "recaptcha", require: "recaptcha/rails"

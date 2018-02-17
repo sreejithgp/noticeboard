@@ -9,9 +9,9 @@ require 'mina/rvm'
 #   branch       - Branch name to deploy. (needed by mina/git)
 
 set :application_name, 'noticeboard'
-set :domain, 'noticeboard.bid'
+set :domain, '195.201.35.250'
 set :user, 'sreejith'
-set :deploy_to, "/home/#{fetch(:user)}/deploy"
+set :deploy_to, "/home/#{fetch(:user)}/deploy/noticeboard"
 set :repository, 'git@github.com:sreejithgp/noticeboard.git'
 set :branch, 'master'
 set :rvm_use_path, '/etc/profile.d/rvm.sh'
@@ -25,7 +25,7 @@ set :rvm_use_path, '/etc/profile.d/rvm.sh'
 # Some plugins already add folders to shared_dirs like `mina/rails` add `public/assets`, `vendor/bundle` and many more
 # run `mina -d` to see all folders and files already included in `shared_dirs` and `shared_files`
 # set :shared_dirs, fetch(:shared_dirs, []).push('public/assets')
-set :shared_files, fetch(:shared_files, []).push('config/database.yml', 'config/secrets.yml', 'public/system/notices')
+set :shared_files, fetch(:shared_files, []).push('config/database.yml', 'config/secrets.yml', 'public/')
 
 # This task is the environment that is loaded for all remote run commands, such as
 # `mina deploy` or `mina rake`.
@@ -79,7 +79,7 @@ task :deploy do
     invoke :'deploy:cleanup'
 
     on :launch do
-      # command "sudo service #{fetch(:user)} restart"
+      command "sudo service #{fetch(:application_name)} restart"
     end
   end
 
